@@ -1,0 +1,40 @@
+
+.form
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;border: 2px solid gray;
+    margin-left: 18%;
+    border-radius: 20px ;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+h1{
+    padding: 10px;
+}
+
+.inpt
+{
+      border: 1px solid skyblue;
+      padding: 2px;
+      width: 70%;
+      height: 30px;
+      margin: 20px;
+      border-radius: 5px;
+}
+
+.save
+{
+     margin: 10px;
+     padding: 5px;
+     width: 100px;
+     height: 30px;
+     cursor: grab;
+     background-color: aqua;
+     border-radius: 5px;
+
+}
