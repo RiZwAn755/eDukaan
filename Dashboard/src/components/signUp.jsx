@@ -27,11 +27,12 @@ function SignUp() {
             
           
             let result = await response.json();
-            console.log("Data from server:", result);
-            
-            
+            console.log("Data from server:", result);            
 
-            localStorage.setItem("user", JSON.stringify(result));
+            localStorage.setItem("user", JSON.stringify(result.result)); 
+            localStorage.setItem("token", JSON.stringify(result.token)); // saving jwt token recieved
+            alert("signup successfull");
+            navigate("/prodlist");
         
     };
     

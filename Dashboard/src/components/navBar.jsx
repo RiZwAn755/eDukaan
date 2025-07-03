@@ -7,7 +7,7 @@ function Nav() {
 
     const navigate = useNavigate();
 
-    function logout() { localStorage.clear(); navigate('/signUp') } // clears the local storage
+    function logout() { localStorage.clear(); navigate('/login') } // clears the local storage
 
     return (
 
@@ -18,9 +18,11 @@ function Nav() {
                    <li>  
             <Link to = "./"><img src="https://img.freepik.com/premium-vector/shopping-logo-design-template_446318-130.jpg?w=1060" style={{height:"50px" , borderRadius:"20px"}}/></Link>
             </li>
-                <li> <Link to='/'>Home </Link></li>
+                <li> <Link to='/'> Home </Link></li>
                 <li> <Link to='./aboutUs'>AboutUs</Link></li>
-                <li>  <Link to='/update'> Update Product</Link> </li>
+                {/* <li>  <Link to='/update'> Update Product</Link> </li> */}
+                <li>  <Link to='/addproduct'> AddProducts </Link> </li>
+                <li>  <Link to='/prodlist'> Products </Link> </li>
                 <li><Link to='/logout' onClick={logout}> LogOut</Link > </li>
 
 

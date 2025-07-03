@@ -29,21 +29,17 @@ function Login() {
 
     console.log("Login details:", result);
 
-    if(result.email)
+    if(result.token) // agar token (jo register krne pr  mila tha) sahi h , to login success hoga
     {
-        localStorage.setItem("user",JSON.stringify(result));
+        localStorage.setItem("user",JSON.stringify(result.user));
+        localStorage.setItem("token",JSON.stringify(result.token)); // saving jwt token recieved
         navigate("/");
+        alert("loggedIn successfully");
     }
     else{
-        alert("enter the correct email");
+        alert("enter the correct credentials");
     }
-    if(result.password ) 
-    {
-        alert("loggedIn successfully");
-
-
-        
-    }
+  
 
         
     };

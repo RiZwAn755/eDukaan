@@ -1,0 +1,38 @@
+
+
+.product{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     flex-direction: column;
+     border: 1px solid skyblue;
+     border-radius: 20px ;
+}
+
+.pd{
+
+    margin: 10px;
+    border: 1px solid skyblue;
+    height: 30px;
+    border-radius: 5px;
+    padding: 4px;
+
+}
+
+.saveP
+{
+    margin: 10px;
+    background-color: aquamarine;
+    height: 30px;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: grab;
+
+}
+
+.ERR
+{
+    margin: 0;
+    color: red;
+}
